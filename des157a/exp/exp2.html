@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2 | JS Experimentation - Functions & DOM</title>
+</head>
+
+<body>
+    <h1>Experiment 2 | JS Experimentation - Functions & DOM
+    </h1>
+    <h2>Interact with my experimentation using functions & DOM on JavaScript!</h2>
+    <p><b>Prompt</b>: Create a guessing number game where the user inputs a number between 1 and 10. Then guess the user input by generating a random number between 1 and 10. Keep guessing until the user says it's correct. At the end of the game it will
+        tell the user thanks for playing and a tells the user to treat themselves with a randomly generated food from the array list. (Credit: Lim Sung)
+    </p>
+    <div class="gameResult">
+        <p id="gameResult">Congrats on guessing the correct number! Treat yourself with <span id="randFood">FOOD</span>.</p>
+        <!-- <p id="incorrect">Uh oh, your guess was incorrect. No food for you!</p> -->
+    </div>
+
+    <script>
+        // Create a guessing number game where the user inputs a number between 1 and 10. Then guess the user input by generating a random number between 1 and 10. Keep guessing until the user says it's correct. At the end of the game it will tell the user thanks for playing and a tells the user to treat themselves with a randomly generated food from the array list.
+
+        function randNumGen(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        var food = ["ice cream", "chocolate", "pizza", "cheesecake", "boba", "dalgona"];
+        var foodResult = food[randNumGen(0, 5)];
+        // document.getElementById("gameResult").innerHTML = `Congrats on guessing the correct number! Treat yourself with ${foodResult}.`
+
+        var correctNumber = randNumGen(1, 10);
+
+        function main(msg) {
+            var userInput;
+
+            if (!msg) {
+                userInput = prompt("guess what number i'm thinking! please enter any whole number from 1-10.", "");
+            } else {
+                userInput = prompt(msg, "");
+            }
+            let numberedInput = Number(userInput);
+            var nextPrompt;
+            console.log(userInput);
+
+            if (userInput === null || userInput === "") {
+                nextPrompt = "you have to guess a number!"
+            } else if (isNaN(userInput)) {
+                nextPrompt = "that's not a number! please enter any whole number from 1-10."
+            } else if (numberedInput > 10) {
+                nextPrompt = "that's a big number! please enter any whole number from 1-10."
+            } else if (numberedInput < 1) {
+                nextPrompt = "that's a small number! please enter any whole number from 1-10."
+            } else if (numberedInput !== correctNumber) {
+                nextPrompt = `uh oh, your guess was incorrect. no food for you!`
+            } else {
+                return document.getElementById("gameResult").innerHTML = `congrats on guessing the correct number! treat yourself with ${foodResult}.`
+            }
+            document.getElementById("gameResult").innerHTML = nextPrompt
+            return main(nextPrompt);
+        }
+        main();
+    </script>
+</body>
+
+</html>
