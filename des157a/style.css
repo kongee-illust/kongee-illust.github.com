@@ -1,6 +1,7 @@
-html{
+html {
     cursor: url(assets/cursor.png), auto;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #FBFCFF;
@@ -11,8 +12,8 @@ body {
 li {
     font-weight: 300;
     list-style-type: none;
-    letter-spacing:-0.5px;
-    font-size:18px;
+    letter-spacing: -0.5px;
+    font-size: 18px;
 }
 
 .window-wrapper {
@@ -22,92 +23,100 @@ li {
     border: solid black 3px;
     padding: 20px;
     margin: auto;
-    margin-top:47px;
-
+    margin-top: 47px;
 }
-main{
+
+main {
     display: flex;
     justify-content: space-between;
     margin: auto;
     max-width: 1366px;
     min-width: 900px;
 }
-main .window-wrapper{
+
+main .window-wrapper {
     max-width: 442px;
     min-width: 400px;
     margin: 30px 0;
 }
+
 h1 {
     font-weight: 900;
 }
 
-.window-wrapper > .content{
+.window-wrapper>.content {
     display: flex;
     justify-content: space-evenly;
 }
+
 .dot-buttons {
     display: flex;
 }
 
-.dot-buttons > .dot{
+.dot-buttons>.dot {
     border-radius: 100%;
     width: 18px;
     height: 18px;
     margin-right: 9px;
 }
-.dot-buttons > .dot1{
+
+.dot-buttons>.dot1 {
     background-color: #9E1946;
 }
-.dot-buttons > .dot2{
+
+.dot-buttons>.dot2 {
     background-color: #FFC100;
 }
-.dot-buttons > .dot3{
+
+.dot-buttons>.dot3 {
     background-color: #4FB477;
 }
 
-.details{
+.details {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
-    margin-top:0;
+    margin-top: 0;
     line-height: 27px;
-    color:#120308;
-    letter-spacing:-0.5px;
+    color: #120308;
+    letter-spacing: -0.5px;
 }
+
 .name {
     font-weight: 900;
     font-size: 52px;
     text-align: center;
-    margin-top:100px;
+    margin-top: 100px;
     margin-bottom: 0;
-    line-height:72px;
+    line-height: 72px;
     animation: gradient 10s infinite;
 }
 
-h2{
-    color:#9E1946;
-    font-size:32px;
+h2 {
+    color: #9E1946;
+    font-size: 32px;
 }
 
 @keyframes gradient {
-    0%{
+    0% {
         color: #FFC100;
     }
-    25%{
+    25% {
         color: #DB8A74;
     }
-    75%{
+    75% {
         color: #9E1946;
     }
-    100%{
+    100% {
         color: #FFC100;
     }
 }
 
-footer{
-    margin-top:65px;
+footer {
+    margin-top: 65px;
 }
+
 
 /* @keyframes gradient {
     0% {
@@ -124,8 +133,8 @@ footer{
     }
 } */
 
-ul{
-    padding-left:32px;
+ul {
+    padding-left: 32px;
 }
 
 .solid {
@@ -133,60 +142,67 @@ ul{
     height: 5px;
     background-color: #120308;
     border-radius: 50px;
-    margin-top:47px;
-    margin-bottom:0;
+    margin-top: 47px;
+    margin-bottom: 0;
 }
 
 a {
     text-decoration: none !important;
 }
 
-h3{
-    text-align:center;
+h3 {
+    text-align: center;
 }
-footer{
+
+footer {
     background: #000000;
     color: white;
     padding: 100px;
 }
+
 footer a {
     color: white;
 }
+
 #footercontent ul {
-    display:flex;
+    display: flex;
     justify-content: center;
-    padding-left:0;
+    padding-left: 0;
 }
-#footercontent li.dot{
+
+#footercontent li.dot {
     margin: 0 15px;
 }
 
 @keyframes peach {
-    0%{
+    0% {
         background-image: url(./assets/peach_butt.png);
         transform: rotateY(0deg);
     }
-    49.9%{
+    49.9% {
         background-image: url(./assets/peach_butt.png);
     }
-    50%{
+    50% {
         transform: rotateY(90deg);
     }
-    50.1%{
+    50.1% {
         background-image: url(./assets/peach_front.png);
     }
-    100%{
+    100% {
         background-image: url(./assets/peach_front.png);
         transform: rotateY(0deg);
     }
 }
-.peach > .peach-inner{
+
+.peach>.peach-inner {
     width: 101px;
     height: 115px;
     background-image: url(./assets/peach_butt.png);
-    animation:  400ms linear 0s infinite alternate both running peach ;
-    animation-play-state: paused;  
+    /* animation:  400ms linear 0s infinite alternate both running peach ; */
+    /* animation-play-state: paused;   */
 }
-.peach:hover > .peach-inner{
-    animation-play-state: running;  
+
+.peach:hover>.peach-inner {
+    /* animation-play-state: running;   */
+    animation: 400ms linear 0s infinite alternate both running peach;
 }
