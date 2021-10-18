@@ -45,9 +45,11 @@
             var nextPrompt;
             console.log(userInput);
 
-            if (userInput === null || userInput === "") {
-                nextPrompt = "you have to guess a number!"
-            } else if (isNaN(userInput)) {
+            // if (userInput === null || userInput === "") {
+            //     nextPrompt = "you have to guess a number! please enter any whole number from 1-10."
+            // } else if (isNaN(userInput)) {
+            //     nextPrompt = "that's not a number! please enter any whole number from 1-10."
+            if (isNaN(userInput)) {
                 nextPrompt = "that's not a number! please enter any whole number from 1-10."
             } else if (numberedInput > 10) {
                 nextPrompt = "that's a big number! please enter any whole number from 1-10."
@@ -56,7 +58,7 @@
             } else if (numberedInput !== correctNumber) {
                 nextPrompt = `uh oh, your guess was incorrect. no food for you!`
             } else {
-                return document.getElementById("gameResult").innerHTML = `congrats on guessing the correct number! treat yourself with ${foodResult}.`
+                return document.getElementById("gameResult").innerHTML = `<b>Result:</b> Congrats on guessing the correct number! treat yourself with ${foodResult}.`
             }
             document.getElementById("gameResult").innerHTML = nextPrompt
             return main(nextPrompt);
