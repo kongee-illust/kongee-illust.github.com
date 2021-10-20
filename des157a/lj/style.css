@@ -47,6 +47,10 @@ a {
     width: 540px;
 }
 
+.posts section {
+    margin-top: 100px;
+}
+
 .post-title {
     margin-bottom: 15px;
 }
