@@ -12,7 +12,8 @@ body {
     font-size: 16px;
 }
 
-a,button:hover {
+a,
+button:hover {
     cursor: url(../assets/cursor.png), auto;
 }
 
@@ -130,56 +131,58 @@ a,button:hover {
     color: #E8E9EB;
 }
 
-main{
-    margin-left:300px;
+main {
+    margin-left: 300px;
     position: relative;
-width: 1066px;
-height: 768px;
+    width: 1066px;
+    height: 768px;
 }
 
-#images > img{
+#images>img {
     position: absolute;
 }
 
-#images > img#stars{
+#images>img#stars {
     width: 1043.41px;
     height: 411.8px;
     left: 22.59px;
     top: 17.73px;
-
 }
-#images > img#spookyPPOP{
+
+#images>img#spookyPPOP {
     width: 131.15px;
     height: 172.87px;
     left: 213.26px;
     top: 285.24px;
 }
 
-#images > img#pumpkinTop  {
+#images>img#pumpkinTop {
     width: 261.09px;
     height: 140.93px;
     left: 128.64px;
     top: 349px;
 }
-#images > img#frontLayer  {
+
+#images>img#frontLayer {
     width: 1066px;
     height: 534.5px;
     left: 0px;
     top: 233.5px;
 }
-#images > img#potionAnimation  {
+
+#images>img#potionAnimation {
     width: 30.74px;
     height: 58.34px;
     left: 450.78px;
     top: 469.16px;
 }
- img#broom  {
+
+img#broom {
     position: absolute;
     width: 103.5px;
     height: 385.43px;
     left: 919px;
     top: 291px;
-    
 }
 
 #helpButton {
@@ -196,14 +199,14 @@ height: 768px;
     font-size: 28px;
     line-height: 36px;
     color: #02153B;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
 }
 
-#helpButton p {
-    margin:0;
+#helpButton span {
+    margin: 0;
 }
 
 #myForm {
@@ -212,22 +215,21 @@ height: 768px;
     justify-content: center;
     align-items: center;
     padding: 35px;
-
     position: absolute;
     width: 384.11px;
     left: 522.18px;
     top: 60px;
-
     background: #E8E9EB;
     border-radius: 15px;
 }
-#myForm > * > * > * {
+
+#myForm>*>*>* {
     display: block;
     height: 25px;
     margin-bottom: 24px;
     padding: 0;
-    
 }
+
 #myForm .top {
     display: flex;
     flex-direction: row;
@@ -236,25 +238,29 @@ height: 768px;
     margin-bottom: 36px;
     width: 374px;
 }
-#myForm  .top .left{
+
+#myForm .top .left {
     margin-right: 24px;
 }
-#myForm .top .left > * {
+
+#myForm .top .left>* {
     display: flex;
     align-items: center;
 }
-#myForm .top .right > * {
+
+#myForm .top .right>* {
     border: 1px black solid;
     border-radius: 2px;
     height: 23px;
 }
-#myForm .bottom{
+
+#myForm .bottom {
     width: 374px;
     display: flex;
     justify-content: space-between;
 }
 
- button{
+button {
     padding: 10px 20px;
     border-radius: 7px;
     font-weight: bold;
@@ -262,20 +268,23 @@ height: 768px;
     border: none;
 }
 
-#back{
+#back {
     background: #B1B3B5;
 }
-#next{
+
+#next {
     background: #B1B3B5;
 }
-#back:hover{
-    background: #FFA62B;
-}
-#next:hover{
+
+#back:hover {
     background: #FFA62B;
 }
 
-#overlay{
+#next:hover {
+    background: #FFA62B;
+}
+
+#overlay {
     opacity: 0;
     pointer-events: none;
     position: absolute;
@@ -289,56 +298,60 @@ height: 768px;
     justify-content: center;
     align-items: center;
 }
-#overlay.open{
+
+#overlay.open {
     opacity: 1;
     pointer-events: all;
 }
-#overlay .content{
+
+#overlay .content {
     background: #E8E9EB;
     padding: 20px 40px;
     width: 490px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     border-radius: 15px;
 }
-button{
+
+button {
     background: #B1B3B5;
 }
-button:hover{
+
+button:hover {
     background: #FFA62B;
 }
-#overlay .content .title{
+
+#overlay .content .title {
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 42px;
     /* identical to box height */
-
-
     color: #090B0B;
 }
-.hidden{
-    display:none !important;
+
+.hidden {
+    display: none !important;
 }
+
 #result {
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: center;
     padding: 35px;
-
     position: absolute;
     width: 384.11px;
     left: 522.18px;
     top: 120.11px;
-
     background: #E8E9EB;
     border-radius: 15px;
 }
-#incomplete-notice{
+
+#incomplete-notice {
     color: #5E3B3B;
 }
 
@@ -346,7 +359,7 @@ button:hover{
     animation: 3s ease-in-out infinite alternate glow;
 }
 
-#spookyPPOP{
+#spookyPPOP {
     animation: 3s ease-in-out infinite alternate slidein;
 }
 
@@ -358,40 +371,34 @@ button:hover{
     0% {
         transform: translateY(100px);
     }
-
     33% {
         transform: translateY(0px);
     }
-    
-    66%{
+    66% {
         transform: translateY(0px);
     }
-
     80% {
         transform: translateY(0px);
     }
-
     100% {
         transform: translateY(100px);
     }
-  }
+}
 
-  @keyframes bubble {
+@keyframes bubble {
     0% {
         transform: translateY(-10px);
     }
-
     100% {
         transform: translateY(0px);
     }
-  }
+}
 
-  @keyframes glow {
+@keyframes glow {
     0% {
         opacity: 0.5;
     }
     100% {
         opacity: 1;
     }
-
-  }
+}
