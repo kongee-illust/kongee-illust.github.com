@@ -1,5 +1,7 @@
 (function() {
     'use strict';
+    console.log("reading js");
+     // your code starts here
 
     //The madlibs is dynamically generated from a simple array of labels.
     // The actual inputs themselves are not important
