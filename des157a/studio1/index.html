@@ -12,65 +12,81 @@
 </head>
 
 <body>
-    <section>
-        <div class="sidebar">
-            <header>
-                <div class="left">
-                    <div class="top">
-                        <div class="cutest-pic">
-                            <img src="images/ppopInverted.png" alt="cute ppoppi inverted" />
+    <section class="sidebar">
+            <section class="left">
+                <header class="top">
+                    <figure class="cutest-pic">
+                        <img src="images/ppopInverted.png" alt="cute ppoppi inverted"/>
+                    </figure>
+                    <section class='content'>
+                        <div class="title">
+                            Sally's<br>
+                            <b>Spooky<br>
+                                Mad Lib</b>
                         </div>
-                        <div class='content'>
-                            <div class="title">
-                                Sally's<br>
-                                <b>Spooky<br>
-                                    Mad Lib</b>
-                            </div>
-                            <p class="description">
-                                Go on a spooky Halloween adventure with PPOPPI the fluffy dog. Your adventure and lots of candy awaits!
-                            </p>
-                            <a href="../index.html">&#60; BACK TO PORTAL</a>
-                        </div>
-                    </div>
-            </header>
-            <footer>
-                <div class="bottom">
+                        <p class="description">
+                            Go on a spooky Halloween adventure with PPOPPI the fluffy dog. Your adventure and lots of candy awaits!
+                        </p>
+                        <a href="../index.html"><b>&#60; BACK TO PORTAL</b></a>
+                    </section>
+                </header>
+                <footer class="bottom">
                     <p><b>CONTACT ME —</b></p>
                     <div id=bottom-info>
                         <p><a href="mailto:shjkim@ucdavis.edu">Email me!</a></p>
                         <p><a href="https://validator.w3.org/check?uri=https://kongee-illust.github.io/des157a/index.html">Valid HTML5</a></p>
                         <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
                     </div>
-                </div>
-            </footer>
-            </div>
-            <nav>
-                <div class="right">
-
-                    <div class="nav-buttons">
-                        <!-- <div></div> -->
-                        <div class="vertical-line"></div>
-                        <div class="content">
-                            <a href="index.html" style="text-decoration:underline !important;">Home</a>
-                            <a href="aboutme.html">About Me</a>
-                            <a href="https://kongee.info/">Portfolio</a>
-                            <a href="https://linkedin.com/in/shjkim/">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                </footer>
+            </section>
     </section>
     <main>
         <div id="images">
-            <img src="images/stars.png">
-            <img src="images/pumpkinTop.png">
-            <img src="images/spookyPPOP.png">
-            <img src="images/frontLayer.png">
-            <img src="images/potionAnimation.png">
-            <img src="images/broom.png">
+            <img id="stars" src="images/stars.png">
+            <img id="pumpkinTop" src="images/pumpkinTop.png">
+            <img id="spookyPPOP" src="images/spookyPPOP.png">
+            <img id="frontLayer" src="images/frontLayer.png">
+            <img id="potionAnimation" src="images/potionAnimation.png">
         </div>
+        <form id="myForm">
+            <p id='incomplete-notice' class="hidden">Please complete the form so I can process your Mad Lib!</p>
+            <div class='top'>
+                <div class="left" id='word-type-wrapper'>
+                </div>
+                <div id="input-wrapper" class="right">
+                </div>
+            </div>
+            
+            <div class='bottom'>
+                <button id="back">Start Over</button>
+                <button id="next">Submit</button>
+            </div>
+        </form>
+        <section id="result" class="hidden">
+            <div class='content'></div>
+            <button id='startOver'>Start Over</button>
+        </section>
+        <img id="broom" src="images/broom.png">
     </main>
+    <nav>
+        <button id="helpButton">
+            <p>?</p>
+        </button>
+    </nav>
+    <section id="overlay">
+        <section class="content">
+            <span class="title">How to play</span>
+            <p>
+                There is only one rule to follow in Mad Libs: Fill in each of the blank spaces with the appropriate type of word. Each blank notes what kind of word goes there, such as a noun, verb or adjective. Outside of that, the choice of word you use is entirely up to you, no matter how ridiculous it is. In fact, the more ridiculous the word, the more hilarious the outcome!
+            </p>
+            <p>
+                Game description credit: https://ourpastimes.com/klondike-solitaire.html
+            </p>
+            <button>sounds good!</button>
+        </section>
+    </section>
 </body>
+
+<script src="./script.js" defer></script>
 
 </html>
