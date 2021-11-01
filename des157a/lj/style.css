@@ -5,6 +5,10 @@ html {
 
 /* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap'); */
 
+figure {
+    margin: 0;
+}
+
 html,
 body {
     font-family: 'DM Sans', sans-serif;
@@ -82,7 +86,7 @@ a {
     margin-top: 10px;
 }
 
-.lefto {
+.left {
     margin-top: 0;
 }
 
@@ -95,6 +99,7 @@ a {
 .bodytext .paragraphs {
     width: calc(100% - 40px);
     line-height: 21px;
+    display: block;
 }
 
 .bodytext .paragraphs p:first-child {
@@ -103,6 +108,7 @@ a {
 
 .bodytext .vertical-line {
     width: 4px;
+    flex-shrink: 0;
     /* transform: rotate(90deg);
     width: 759px;
     height: 0px; */
