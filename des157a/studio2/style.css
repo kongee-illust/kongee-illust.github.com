@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'KoreanFont';
+    font-style: normal;
+    src: url(./fonts/koreanfont.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'KoreanFont';
+    font-style: normal;
+    src: url(./fonts/koreanfont.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'KoreanFont2';
+    font-style: normal;
+    src: url(./fonts/koreanfont2.ttf) format('ttf');
+}
+
 html {
     background-color: #E8E9EB;
     cursor: url(../assets/cursor.png), auto;
@@ -129,3 +147,109 @@ button:hover {
 
 
 /* SIDEBAR CSS STOPS HERE!!!!!! */
+
+.main-content {
+    margin-left: 300px;
+}
+
+
+/* heading css starts here */
+
+
+/* #title {
+    display: inline-block;
+    font-size: 120px;
+    font-family: 'KoreanFont';
+    color: #090B0B;
+    width: 119px;
+} */
+
+#text {
+    position: absolute;
+    width: 400px;
+    height: 768px;
+    left: 339.67px;
+    top: 0px;
+}
+
+#gallery {
+    position: absolute;
+    width: 420px;
+    height: 100%;
+    left: 826px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* w3school documentation: */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#gallery div {
+    margin-bottom: 40px;
+    height: 300px;
+    transition: transform 220ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery div:hover {
+    transform: scale(1.05);
+    /* below is my futile effort to make the images darken upon hover lol */
+    /* background: linear-gradient(0deg, #090B0B60, #090B0B60), url(.jpg); */
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    width: calc(100vw - 300px);
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.753);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .inner {
+    height: 472px;
+    width: 780px;
+    background-color: #E8E9EB;
+    color: black;
+    padding: 40px;
+}
+
+.overlay.open {
+    display: flex;
+}
+
+.overlay h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.overlay p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 15.4px;
+}
+
+#controls {
+    position: absolute;
+    height: 69px;
+    width: 29px;
+    left: 1288px;
+    top: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#controls>* {
+    transition: transform 220ms;
+}
+
+#controls>*:hover {
+    transform: scale(1.2);
+}

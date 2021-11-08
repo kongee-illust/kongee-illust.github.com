@@ -35,26 +35,81 @@
                 <p><b>CONTACT ME —</b></p>
                 <ul>
                     <li><a href="mailto:shjkim@ucdavis.edu">Email me!</a></li>
-                    <li><a href="https://validator.w3.org/check?uri=https://kongee-illust.github.io/des157a/studio1/index.html">Valid HTML5</a></li>
-                    <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkongee-illust.github.io%2Fdes157a%2Fstudio1%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a></li>
+                    <li><a href="https://validator.w3.org/check?uri=https://kongee-illust.github.io/des157a/studio2/index.html">Valid HTML5</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkongee-illust.github.io%2Fdes157a%2Fstudio2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a></li>
                 </ul>
             </footer>
         </section>
-        <section id="text">
-            <h1 id="title">
-                소확행
-            </h1>
-            <p class=vertical-description>소소하지만,</p>
-            <p class=vertical-description>확실한 행복.</p>
-            <!-- add circle and line elements here -->
-        </section>
-        <section id="gallery">
-            <img src="images/sunset1.jpg" alt="sunset1">
-            <img src="images/sunset2.jpg" alt="sunset2">
-            <img src="images/sunset3.jpg" alt="sunset3">
-            <img src="images/sunset4.jpg" alt="sunset4">
-        </section>
+        <div class="main-content">
+            <section id="text">
+                <!-- <h1 id="title">
+                    소확행
+                </h1>
+                <div id="vertical-description">
+                    <p class=vertical-description>소소하지만,</p>
+                    <p class=vertical-description>확실한 행복.</p>
+                </div>
+                <img src="images/shapes.png" alt="shapes"> -->
+                <img src="images/titleandtext.png" alt="title and text">
+            </section>
+            <section id="gallery">
+                <div class="gallery-item real" data-modal="sunset">
+                    <img src="images/sunset1.jpg" alt="sunset1">
+                </div>
+                <div class="gallery-item real" data-modal="bake1">
+                    <img src="images/bake1.JPG" alt="bake1">
+                </div>
+                <div class="gallery-item real" data-modal="garden">
+                    <img src="images/garden1.JPG" alt="garden1">
+                </div>
+                <div class="gallery-item real" data-modal="bake2">
+                    <img src="images/bake2.JPG" alt="bake2">
+                </div>
+                <div class="gallery-item dummy" data-modal="sunset">
+                    <img src="images/sunset1.jpg" alt="sunset1">
+                </div>
+                <div class="gallery-item dummy" data-modal="bake1">
+                    <img src="images/bake1.JPG" alt="bake1">
+                </div>
+                <div class="gallery-item dummy" data-modal="garden">
+                    <img src="images/garden1.JPG" alt="garden1">
+                </div>
+            </section>
+            <div id='controls'>
+                <img id="up" src="images/up.png" alt="garden1">
+                <img id="down" src="images/down.png" alt="garden1">
+            </div>
+            <div class="overlay" id="sunset">
+                <div class="inner">
+                    <img src="images/sunset2.jpg" alt="sunset2">
+                    <h3>저녁산책—</h3>
+                    <p>My parents and I would go for a short walk around the neighborhood after dinner. Anticipating the color of the sky at the same intersection every night and capturing a picture of it is a small, yet definite happiness for me.</p>
+                </div>
+            </div>
+            <div class="overlay" id="bake1">
+                <div class="inner">
+                    <img src="images/bake3.JPG" alt="bake3">
+                    <h3>홈베이킹—</h3>
+                    <p>From researching recipes, finding the ingredients, to finally seeing the reaction of my family once I take the food out of the oven, the entire process of home baking is a small, yet definite happiness for me.</p>
+                </div>
+            </div>
+            <div class="overlay" id="garden">
+                <div class="inner">
+                    <img src="images/garden2.JPG" alt="garden2">
+                    <h3>가드닝—</h3>
+                    <p>Sometimes, I wake up to the sound of my dad watering his plants in the backyard. With a variety of crops including perilla leaves, tomatoes, chilis, and basil, the backyard garden is my favorite place to shop for ingredients.</p>
+                </div>
+            </div>
+            <div class="overlay" id="bake2">
+                <div class="inner">
+                    <img src="images/bake1.JPG" alt="bake1">
+                    <h3>홈베이킹—</h3>
+                    <p>From researching recipes, finding the ingredients, to finally seeing the reaction of my family once I take the food out of the oven, the entire process of home baking is a small, yet definite happiness for me.</p>
+                </div>
+            </div>
+        </div>
     </main>
+
 </body>
 
 </html>
