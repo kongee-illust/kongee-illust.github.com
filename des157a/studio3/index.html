@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Game On!</title>
+</head>
+
+<body>
+    <main>
+        <section id="sidebar">
+            <header class="top">
+                <figure class="cutest-pic">
+                    <img src="../studio1/images/ppopInverted.png" alt="cute dog inverted">
+                </figure>
+                <section class='content'>
+                    <div class="title">
+                        <b>Game On!</b>
+                    </div>
+                    <p class="description">
+                        The game of Pig is a very simple jeopardy dice game in which two players race to reach 30 points. Play with your friends, and see who wins!
+                    </p>
+                    <a href="../index.html"><b>&#60; BACK TO PORTAL</b></a>
+                </section>
+            </header>
+            <footer class="bottom">
+                <p><b>CONTACT ME —</b></p>
+                <ul>
+                    <li><a href="mailto:shjkim@ucdavis.edu">Email me!</a></li>
+                    <li><a href="https://validator.w3.org/check?uri=https://kongee-illust.github.io/des157a/studio2/index.html">Valid HTML5</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkongee-illust.github.io%2Fdes157a%2Fstudio2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a></li>
+                </ul>
+            </footer>
+        </section>
+        <div class="main-content">
+            <section id="images">
+                <img id="stars" src="images/stars.svg" alt="stars">
+                <img id="space-background" src="images/space-background.svg" alt="space-background">
+                <img id="piggi" src="images/piggi.svg" alt="piggi">
+
+                <img id="player2-icon" class='icon' src="images/player2-icon.svg" alt="icon">
+            </section>
+
+            <div id="gamecontrol">
+                <div class="game-screen intro">
+                    <h2>Start a Game!</h2>
+                    <button id="startgame" class="light-button">Randomly Pick the First Player, and Start the Game</button>
+                </div>
+                <div class="game-screen playing">
+                    <h2>The game has started!</h2>
+                    <div class="player-card d-flex jc-sb one">
+                        <div class="left d-flex jc-sb">
+                            <div class="top d-flex jc-sb">
+                                <img id="player1-icon" class='icon' src="images/player1-icon.svg" alt="icon">
+                                <span class='name'>Player 1</span>
+                            </div>
+                            <div class="bottom">
+                                Total points: <span class='score'>0</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <!-- dice imgs here -->
+                        </div>
+                    </div>
+                    <div class="player-card d-flex jc-sb two">
+                        <div class="left d-flex jc-sb">
+                            <div class="top d-flex jc-sb">
+                                <img id="player2-icon" class='icon' src="images/player2-icon.svg" alt="icon">
+                                <span class='name'>Player 2</span>
+                            </div>
+                            <div class="bottom">
+                                Total points: <span class='score'>0</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <!-- dice imgs here -->
+                        </div>
+                    </div>
+                    <div id='game-info'>
+                    </div>
+                    <div class="buttons d-flex jc-sb">
+                        <button id="quit" class="grey-button">Quit Game</button>
+                        <button id="quit" class="light-button">Pass Turn</button>
+                        <button id="roll" class="light-button">Roll Again</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game"></div>
+            <div id="actions"></div>
+            <div id="score"></div>
+
+            <nav>
+                <button id="helpButton">
+                    <span>?</span>
+                </button>
+            </nav>
+
+            <section id="overlay">
+                <section class="content">
+                    <span class="title">How to play</span>
+                    <p>There are two players, Sun & Moon. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a “one”. If this happens, this player's turn is over, and it
+                        is the other player’s turn. After each roll, the current player can either roll again, (assuming a “one” was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player
+                        to get 30 points or higher wins!</p>
+
+                    <p>Oh, and if you roll two “ones” (double stars), your current score gets zeroed out. So don’t do that.</p>
+
+                    <p>Game description credit: https://meadpoint.net/pig-js/</p>
+
+                    <button>sounds good!</button>
+                </section>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

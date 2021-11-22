@@ -1,0 +1,299 @@
+html {
+    background-color: #E8E9EB;
+    cursor: url(../assets/cursor.png), auto;
+}
+
+html,
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    /* background: #E8E9EB; */
+    color: #E8E9EB;
+    font-size: 16px;
+}
+
+a,
+button:hover {
+    cursor: url(../assets/cursor.png), auto;
+    /* background: #090B0B;
+    color: #E8E9EB; */
+}
+
+
+/* SIDEBAR CSS STARTS HERE!!!!!! */
+
+
+/* left sidebar content; class top = img, title, description, and a; bottom = contact me info */
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #090B0B;
+    /* padding: 100px 62px 100px 63px; */
+}
+
+header.top {
+    margin-top: 100px;
+}
+
+#sidebar .top a {
+    text-decoration: none;
+    color: #E8E9EB;
+}
+
+#sidebar .top a:hover {
+    background-color: #E8E9EB;
+    color: #090B0B;
+}
+
+#sidebar .top img {
+    width: 175px;
+    height: 212px;
+}
+
+.cutest-pic {
+    margin: 0 0 20px 0;
+}
+
+
+/* content is title, description, and portal link */
+
+.content {
+    width: 175px;
+}
+
+header.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+footer.bottom {
+    margin-top: 37px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 63px;
+    width: 300px;
+}
+
+footer.bottom p {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    width: 175px;
+}
+
+footer.bottom ul {
+    padding: 0;
+    width: 175px;
+}
+
+footer.bottom ul li {
+    line-height: 16px;
+    list-style-type: none !important;
+    width: 175px;
+}
+
+footer.bottom ul li a {
+    text-decoration: none;
+    color: #E8E9EB;
+}
+
+footer.bottom ul li a:hover {
+    background-color: #090B0B;
+    color: #E8E9EB;
+}
+
+
+/* SIDEBAR CSS STOPS HERE!!!!!! */
+
+.vertical-line {
+    width: 3px;
+    min-height: 100%;
+    border-radius: 100px;
+    background: #2b3e46 !important;
+}
+
+.vertical-line-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .left a {
+    text-decoration: none;
+    color: #090B0B;
+}
+
+.sidebar .left a:hover {
+    background-color: #090B0B;
+    color: #E8E9EB;
+}
+
+.posts {
+    margin-top: 100px;
+    margin-left: 563px;
+    width: 540px;
+}
+
+.posts section {
+    margin-top: 100px;
+}
+
+.post-title {
+    margin-bottom: 15px;
+}
+
+.post-title h1,
+.post-title p {
+    margin: 0;
+    color: #090B0B;
+}
+
+.post-title h1 {
+    line-height: 52px;
+    font-size: 40px;
+}
+
+.post-title p {
+    color: #31363890;
+}
+
+.author-info p {
+    color: #313638;
+}
+
+.author-info p:last-child {
+    margin-top: 0;
+}
+
+.author-info p:first-child {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.left {
+    margin-top: 0;
+}
+
+.bodytext {
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.bodytext .paragraphs {
+    width: calc(100% - 40px);
+    line-height: 21px;
+    display: block;
+    color: #090B0B;
+}
+
+.bodytext .paragraphs p:first-child {
+    margin-top: 0;
+}
+
+.bodytext .vertical-line {
+    width: 4px;
+    flex-shrink: 0;
+    /* transform: rotate(90deg);
+    width: 759px;
+    height: 0px; */
+    margin-left: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 515px;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.sidebar .left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 175px;
+    height: calc( 100vh - 200px);
+    padding: 100px 62px;
+    background: #090B0B;
+    color: #E8E9EB;
+    font-size: 12px;
+}
+
+.sidebar .left .top .cutest-pic {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar .left .top .cutest-pic img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.sidebar .left .top .content .title {
+    font-family: "DM Sans";
+    font-size: 32px;
+    /* font-weight: 700; */
+    margin-bottom: 20px;
+}
+
+.sidebar .left .top .content .description {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.sidebar .left .top .content {
+    margin-bottom: 80px;
+}
+
+.sidebar .right {
+    height: calc( 100vh - 200px);
+    padding: 100px 62px;
+}
+
+.sidebar .right {
+    width: 175px;
+}
+
+.sidebar .right .content a {
+    color: #090B0B;
+    text-decoration: none;
+    display: inline;
+    width: unset;
+}
+
+.sidebar .right .content a:hover {
+    background-color: #E8E9EB;
+    color: #090B0B;
+}

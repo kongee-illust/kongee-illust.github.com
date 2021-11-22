@@ -1,0 +1,329 @@
+html {
+    background-color: #1D1135;
+    cursor: url(../assets/cursor.png), auto;
+}
+
+html,
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    /* background: #E8E9EB; */
+    color: #090B0B;
+    font-size: 16px;
+}
+
+a,
+button:hover {
+    cursor: url(../assets/cursor.png), auto;
+    /* background: #090B0B;
+    color: #E8E9EB; */
+}
+
+
+/* SIDEBAR CSS STARTS HERE!!!!!! */
+
+
+/* left sidebar content; class top = img, title, description, and a; bottom = contact me info */
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #E8E9EB;
+    /* padding: 100px 62px 100px 63px; */
+}
+
+header.top {
+    margin-top: 100px;
+}
+
+#sidebar .top a {
+    text-decoration: none;
+    color: #090B0B;
+}
+
+#sidebar .top a:hover {
+    background-color: #090B0B;
+    color: #E8E9EB;
+}
+
+#sidebar .top img {
+    width: 175px;
+    height: 212px;
+}
+
+.cutest-pic {
+    margin: 0 0 20px 0;
+}
+
+
+/* content is title, description, and portal link */
+
+.content {
+    width: 175px;
+}
+
+header.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+footer.bottom {
+    margin-top: 37px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 63px;
+    width: 300px;
+}
+
+footer.bottom p {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    width: 175px;
+}
+
+footer.bottom ul {
+    padding: 0;
+    width: 175px;
+}
+
+footer.bottom ul li {
+    line-height: 16px;
+    list-style-type: none !important;
+    width: 175px;
+}
+
+footer.bottom ul li a {
+    text-decoration: none;
+    color: #090B0B;
+}
+
+footer.bottom ul li a:hover {
+    background-color: #E8E9EB;
+    color: #090B0B;
+}
+
+
+/* SIDEBAR CSS STOPS HERE!!!!!! */
+
+
+/* IMAGES STYLING */
+
+#stars {
+    position: absolute;
+    width: 1037.34px;
+    height: 598.06px;
+    left: 323.59px;
+    top: 102.94px;
+    animation: 1.5s ease-in-out infinite alternate glow;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#space-background {
+    position: absolute;
+    width: 1066px;
+    height: 768px;
+    left: 300px;
+    top: 0px;
+}
+
+#piggi {
+    position: absolute;
+    width: 232.56px;
+    height: 368.65px;
+    left: 444.81px;
+    top: 200px;
+    animation: 1.5s linear infinite alternate piggi-move;
+}
+
+@keyframes piggi-move {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#gamecontrol {
+    padding: 35px;
+    background-color: #E8E9EB;
+    color: #090B0B;
+    border-radius: 15px;
+    /* position: absolute;
+    width: calc(444px - 35px*2px);
+    top: 213px; */
+    left: 822.18px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#gamecontrol .game-screen {
+    display: none;
+}
+
+#gamecontrol .intro {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    transition: all 220ms;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button.light-button {
+    color: #1D1135;
+    background: #E6C6E4;
+}
+
+button.light-button:hover {
+    color: #E6C6E4;
+    background: #1D1135;
+}
+
+button.grey-button {
+    color: #090B0B;
+    background: #B1B3B5;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.player-card {
+    width: 374px;
+    margin-bottom: 40px;
+}
+
+.player-card .right {
+    width: 236px;
+}
+
+.player-card .left {
+    width: 110px;
+    height: 81px;
+    flex-direction: column;
+}
+
+.player-card .left .top {
+    align-items: center;
+}
+
+.player-card .score,
+.player-card .name {
+    font-weight: bold;
+}
+
+.player-card .right {
+    width: 236px;
+    height: 82px;
+    border-radius: 9px;
+    background: #000000A6;
+    border: 2px solid #1D1135B2
+}
+
+
+/* HELP BUTTON */
+
+#helpButton {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1257px;
+    top: 661px;
+    background: #E6C6E4;
+    border-radius: 100%;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #1D1135;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#helpButton span {
+    margin: 0;
+}
+
+#overlay {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 250ms;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay .open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#overlay .content {
+    background: #E8E9EB;
+    padding: 20px 40px;
+    width: 570px;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
