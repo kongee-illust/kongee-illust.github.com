@@ -266,11 +266,29 @@ button.grey-button {
     height: 82px;
     border-radius: 9px;
     background: #000000A6;
-    border: 2px solid #1D1135B2
+    border: 2px solid #1D1135B2;
+    position: relative;
+}
+
+.dice-holder {
+    position: absolute;
+    top: 15px;
+    width: 51px;
+    height: 51px;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.dice-holder.dice1 {
+    left: 45px;
+}
+
+.dice-holder.dice2 {
+    left: 138px;
 }
 
 
-/* HELP BUTTON */
+/* HELP BUTTON AND OVERLAY*/
 
 #helpButton {
     position: absolute;
@@ -311,7 +329,7 @@ button.grey-button {
     align-items: center;
 }
 
-#overlay .open {
+#overlay.open {
     opacity: 1;
     pointer-events: all;
 }
@@ -320,10 +338,23 @@ button.grey-button {
     background: #E8E9EB;
     padding: 20px 40px;
     width: 570px;
-    height: 336px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
+}
+
+#overlay .content .title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    /* identical to box height */
+    color: #090B0B;
+}
+
+.hidden {
+    display: none !important;
 }
