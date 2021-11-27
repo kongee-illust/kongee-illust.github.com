@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Every Picture: An Album</title>
+</head>
+
+<body>
+    <main>
+        <section id="sidebar">
+            <header class="top">
+                <figure class="cutest-pic">
+                    <img src="images/ppop.png" alt="cute dog" />
+                </figure>
+                <section class='content'>
+                    <div class="title">
+                        Every<br>Picture:
+                        <br>
+                        <b>An Album</b>
+                    </div>
+                    <p class="description">
+                        View the fond memories that constitute my small, yet definite happiness in this editorial-style website.
+                    </p>
+                    <a href="../index.html"><b>&#60; BACK TO PORTAL</b></a>
+                </section>
+            </header>
+            <footer class="bottom">
+                <p><b>CONTACT ME —</b></p>
+                <ul>
+                    <li><a href="mailto:shjkim@ucdavis.edu">Email me!</a></li>
+                    <li><a href="https://validator.w3.org/check?uri=https://kongee-illust.github.io/des157a/studio2/index.html">Valid HTML5</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkongee-illust.github.io%2Fdes157a%2Fstudio2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a></li>
+                </ul>
+            </footer>
+        </section>
+        <div class="main-content">
+            <section id="left">
+                <img id="text" src="images/title-text.svg" alt="title and text">
+
+                <!-- need to fix these later w brandon -->
+
+                <!-- <div id="circle-left"></div>
+                <div id="line-left"></div> -->
+
+                <!-- <img id="circle-right" src="images/circle-right.svg" alt="circle-right"> -->
+                <!-- <img id="line-right" src="images/line-right.svg" alt="line-right"> -->
+            </section>
+            <section id="gallery">
+                <div class="gallery-item real" data-modal="sunset">
+                    <img src="images/sunset1.jpg" alt="sunset1">
+                </div>
+                <div class="gallery-item real" data-modal="bake1">
+                    <img src="images/bake1.JPG" alt="bake1">
+                </div>
+                <div class="gallery-item real" data-modal="garden">
+                    <img src="images/garden1.jpg" alt="garden1">
+                </div>
+                <div class="gallery-item real" data-modal="bake2">
+                    <img src="images/bake2.JPG" alt="bake2">
+                </div>
+                <div class="gallery-item dummy" data-modal="sunset">
+                    <img src="images/sunset1.jpg" alt="sunset1">
+                </div>
+                <div class="gallery-item dummy" data-modal="bake1">
+                    <img src="images/bake1.JPG" alt="bake1">
+                </div>
+                <div class="gallery-item dummy" data-modal="garden">
+                    <img src="images/garden1.JPG" alt="garden1">
+                </div>
+            </section>
+            <div id='controls'>
+                <img id="up" src="images/up.png" alt="garden1">
+                <img id="down" src="images/down.png" alt="garden1">
+            </div>
+            <div class="overlay" id="sunset">
+                <div class="inner">
+                    <img src="images/sunset2.jpg" alt="sunset2">
+                    <h3>저녁산책—</h3>
+                    <p>My parents and I would go for a short walk around the neighborhood after dinner. Anticipating the color of the sky at the same intersection every night and capturing a picture of it is a small, yet definite happiness for me.</p>
+                </div>
+            </div>
+            <div class="overlay" id="bake1">
+                <div class="inner">
+                    <img src="images/bake3.JPG" alt="bake3">
+                    <h3>홈베이킹—</h3>
+                    <p>From researching recipes, finding the ingredients, to finally seeing the reaction of my family once I take the food out of the oven, the entire process of home baking is a small, yet definite happiness for me.</p>
+                </div>
+            </div>
+            <div class="overlay" id="garden">
+                <div class="inner">
+                    <img src="images/garden2.jpg" alt="garden2">
+                    <h3>가드닝—</h3>
+                    <p>Sometimes, I wake up to the sound of my dad watering his plants in the backyard. With a variety of crops including perilla leaves, tomatoes, chilis, and basil, the backyard garden is my favorite place to shop for ingredients.</p>
+                </div>
+            </div>
+            <div class="overlay" id="bake2">
+                <div class="inner">
+                    <img src="images/bake1.JPG" alt="bake1">
+                    <h3>홈베이킹—</h3>
+                    <p>From researching recipes, finding the ingredients, to finally seeing the reaction of my family once I take the food out of the oven, the entire process of home baking is a small, yet definite happiness for me.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
