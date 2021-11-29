@@ -1,0 +1,338 @@
+/* global elements styling */
+
+@font-face {
+    font-family: 'KoreanFont';
+    font-style: normal;
+    src: url(./fonts/koreanfont.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'ChosunSm';
+    font-style: normal;
+    src: url(./fonts/ChosunSm.ttf) format('truetype');
+}
+
+html {
+    background-color: #E8E9EB;
+    cursor: url(images/mainCursor.svg), auto;
+}
+
+html,
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    /* background: #E8E9EB; */
+    color: #E8E9EB;
+    font-size: 16px;
+}
+
+a,
+button:hover {
+    cursor: url(images/mainCursor.svg), auto;
+}
+
+
+/* NOT WORKING  */
+
+#gallery .gallery-item img {
+    cursor: url(images/viewMore-Cursor.svg), auto;
+}
+
+
+/* SIDEBAR CSS STARTS HERE!!!!!! */
+
+
+/* left sidebar content; class top = img, title, description, and a; bottom = contact me info */
+
+#sidebar {
+    /* z index manually orders the draw priorities */
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #090B0B;
+    /* padding: 100px 62px 100px 63px; */
+}
+
+.top {
+    margin-top: 100px;
+}
+
+#sidebar .top a {
+    text-decoration: none;
+    color: #E8E9EB;
+}
+
+#sidebar .top a:hover {
+    background-color: #E8E9EB;
+    color: #090B0B;
+}
+
+#sidebar .top img {
+    width: 175px;
+    height: 212px;
+}
+
+.cutest-pic {
+    margin: 0;
+}
+
+
+/* content is title, description, and portal link */
+
+.content {
+    width: 175px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    margin-top: 37px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 63px;
+    width: 300px;
+}
+
+.bottom p {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    width: 175px;
+}
+
+.bottom ul {
+    padding: 0;
+    width: 175px;
+}
+
+.bottom ul li {
+    line-height: 16px;
+    list-style-type: none !important;
+    width: 175px;
+}
+
+.bottom ul li a {
+    text-decoration: none;
+    color: #E8E9EB;
+}
+
+.bottom ul li a:hover {
+    background-color: #E8E9EB;
+    color: #090B0B;
+}
+
+
+/* SIDEBAR CSS STOPS HERE!!!!!! */
+
+.main-content {
+    position: relative;
+    /* //margin-left: 300px; */
+    transition: transform 920ms;
+}
+
+.main-content.open {
+    transform: translate3d(-470px, 0, 0);
+}
+
+
+/* heading css starts here */
+
+#left {
+    position: absolute;
+    width: 400px;
+    height: 768px;
+    left: 339.67px;
+    top: 0px;
+    background-color: #E8E9EB;
+}
+
+#text {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 94.33px;
+}
+
+
+/* #shapes-left {
+    background-blend-mode: difference;
+    position: absolute;
+    width: 59.4px;
+    height: 360px;
+    left: 340px;
+    top: -126px;
+    animation: 1.5s linear infinite alternate shapes-animate;
+} */
+
+
+/* #circle-left {
+    border-radius: 100%;
+    position: absolute;
+    width: 59.4px;
+    height: 59.4px;
+    left: 0;
+    top: 51.65px;
+    background: #000;
+    mix-blend-mode: difference;
+}
+
+#line-left {
+    position: absolute;
+    width: 234px;
+    height: 0px;
+    top: 0;
+    left: -100px;
+    border: 1.5px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    mix-blend-mode: difference;
+    transform: rotate(90deg);
+} */
+
+
+/* #circle-right {
+    position: absolute;
+    width: 26.12px;
+    height: 26.12px;
+    left: 343.33px;
+    top: 630.94px;
+    background: #FFFFFF;
+    mix-blend-mode: difference;
+    border-radius: 100%;
+} */
+
+@keyframes shapes-animate {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#gallery {
+    position: absolute;
+    width: 420px;
+    height: 100vh;
+    left: 826px;
+    overflow-y: scroll;
+}
+
+#gallery::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+#gallery div {
+    margin-bottom: 40px;
+    height: 300px;
+    transition: transform 220ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery div:hover {
+    transform: scale(1.05);
+    /* below is my futile effort to make the images darken upon hover lol */
+    /* background: linear-gradient(0deg, #090B0B60, #090B0B60), url(.jpg); */
+}
+
+.overlay {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 1000px;
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.753); */
+    justify-content: center;
+    align-items: center;
+    left: 770px;
+    /* animation for the overlay transition fade in */
+    transition: opacity 400ms, transform 600ms;
+    transform: translateX(-100px);
+}
+
+.overlay .inner {
+    transform: translateX(246px);
+    height: 472px;
+    width: 293.24px;
+    /* background-color: #E8E9EB; */
+    color: black;
+    padding: 40px;
+}
+
+.overlay.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(20px);
+}
+
+.overlay h3 {
+    font-family: 'ChosunSm', 'DM Sans', sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.overlay p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 15.4px;
+}
+
+#controls {
+    position: absolute;
+    height: 69px;
+    width: 29px;
+    left: 1288px;
+    top: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#controls>* {
+    transition: transform 220ms;
+}
+
+#controls>*:hover {
+    transform: scale(1.2);
+}
+
+.overlay {
+    font-family: 'ChosunSm';
+}
