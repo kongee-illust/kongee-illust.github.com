@@ -1,0 +1,59 @@
+{
+    "vienna": {
+        "title": "Vienna",
+        "artist": "palebabyblue",
+        "genre": "k city pop",
+        "language": "korean",
+        "times played this week": 9
+    },
+    "loveinsummer": {
+        "title": "love in summer",
+        "artist": "george",
+        "genre": "kpop",
+        "language": "english",
+        "times played this week": 6
+    },
+    "3108": {
+        "title": "3108",
+        "artist": "HA HYUN SANG",
+        "genre": "kpop",
+        "language": "korean",
+        "times played this week": 3
+    },
+    "intothenight": {
+        "title": "Into The Night",
+        "artist": "YOASOBI",
+        "genre": "jpop",
+        "language": "japanese",
+        "times played this week": 12
+    },
+    "pado": {
+        "title": "Pado",
+        "artist": "BIBI",
+        "genre": "kpop",
+        "language": "korean",
+        "times played this week": 8
+    },
+    "homura": {
+        "title": "homura",
+        "artist": "LiSA",
+        "genre": "jpop",
+        "language": "japanese",
+        "times played this week": 10
+    },
+    "nightlikethis": {
+        "title": "A Night Like This",
+        "artist": "Nokdu",
+        "genre": "k city pop",
+        "language": "korean",
+        "times played this week": 2
+    },
+    "pillows": {
+        "title": "pillows",
+        "artist": "eaJ",
+        "genre": "pop",
+        "language": "english",
+        "times played this week": 6
+    }
+
+}

@@ -1,0 +1,258 @@
+html {
+    letter-spacing: -0.5px;
+    font-family: 'Inter', sans-serif;
+    background-color: #18282E;
+    color: #F3F7F2;
+}
+
+nav {
+    font-size: 16px;
+    height: 80px;
+    border-bottom: thin solid #F3F7F2;
+    display: flex;
+    padding: 30px 56px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#portal-link {
+    color: #F3F7F2;
+}
+
+a {
+    color: #F3F7F2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F3F7F2;
+}
+
+nav h1 {
+    font-size: 18px;
+    color: #F17B7B;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+span.red {
+    color: #F17B7B;
+}
+
+main {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+    margin: 92px 180px;
+}
+
+section.iphone {
+    position: relative;
+}
+
+section.iphone>svg {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+section.iphone .nav {
+    padding: 22px 19px 14px 19px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.iphone .description {
+    padding: 0px 19px 14px 19px;
+}
+
+section.iphone .description>.title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section.iphone .description>.sub {
+    opacity: .5;
+    font-size: 6px;
+}
+
+section.iphone .row-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+section.iphone .row-wrapper>.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.iphone .row-wrapper>.row>.item {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+section.iphone .row-wrapper>.row>.item>.image-wrapper {
+    overflow: hidden;
+    height: 90px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+section.iphone .row-wrapper>.row>.item>.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: transform 440ms;
+}
+
+section.iphone .row-wrapper>.row>.item:hover>.image-wrapper img {
+    transform: scale(1.15);
+}
+
+section.iphone .row-wrapper>.row>.item>.title {
+    font-size: 9px;
+    margin-bottom: 5px;
+}
+
+section.iphone .row-wrapper>.row>.item>.artist {
+    font-size: 6px;
+}
+
+section.iphone>.window-wrapper {
+    position: absolute;
+    z-index: 1;
+    width: 232.76px;
+    height: 504px;
+    top: 0px;
+    left: 2px;
+    background: #18282E;
+    /* background-color: red; */
+    border: 10px solid #F3F7F2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section.iphone .window-inner {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+section.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    opacity: 0;
+    transform: translateX(-100px) scale(0.9);
+    transition: opacity 220ms, transform 440ms;
+}
+
+section.content.touched {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+}
+
+section.content>.top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section.content>.bottom {
+    width: 670px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+section.content>.bottom>.left {
+    width: 200px;
+    height: 200px;
+}
+
+section.content>.bottom>.right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section.content>.bottom>.right>.top {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+section.content>.bottom>.right>.bottom {
+    display: flex;
+    gap: 24px;
+}
+
+section.content>.bottom>.right>.bottom>.left {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+section.content>.bottom>.right>.bottom>.middle {
+    width: 150px;
+}
+
+section.content>.bottom>.right>.bottom>.middle .count {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+section.content>.bottom>.right>.bottom>.vertical-divider {
+    width: 1.5px;
+    height: 108px;
+    background-color: rgba(243, 247, 242, 0.25);
+}
+
+section.content>.bottom>.right>.bottom>.right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+section.content .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+section.content .item>.item-title {
+    font-size: 11px;
+}
+
+section.content .item>.item-value {
+    font-weight: bold;
+    font-size: 14px;
+}
