@@ -1,0 +1,145 @@
+html {
+    letter-spacing: -0.5px;
+    font-family: 'Inter', sans-serif;
+    background-color: #12263A;
+    color: #F4EDEA;
+}
+
+nav {
+    font-size: 16px;
+    height: 80px;
+    border-bottom: thin solid #C5D8D1;
+    display: flex;
+    padding: 30px 56px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    transition: border-bottom 440ms;
+}
+
+#portal-link {
+    color: #F4EDEA90;
+    transition: color 440ms;
+}
+
+a {
+    color: #06BCC1;
+    text-decoration: none;
+    transition: color 440ms;
+}
+
+a:visited {
+    color: #06BCC1;
+    text-decoration: none;
+    transition: color 440ms;
+}
+
+#name {
+    color: #06BCC1;
+}
+
+#gradient-box {
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(270deg, #21BCC0 0%, #F3D1B0 100%);
+}
+
+
+/* END OF FINAL PROJECT THEME */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 502.7px;
+    height: 253px;
+    left: 64px;
+    top: 293px;
+}
+
+header div {
+    padding-left: 48px;
+}
+
+header div p {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    color: #F4EDEA85;
+}
+
+header div h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    width: 435px;
+    height: 231px;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 648px;
+    height: 843px;
+    left: 664px;
+    top: 137px;
+    margin: 48px 64px auto auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #C5D8D1;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.cards * {
+    width: 600px;
+}
+
+.cards div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 600px;
+}
+
+.cards div>* {
+    margin: 0;
+    padding: 0;
+}
+
+.cards h1 {
+    color: #f4d1ae;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.cards div p {
+    font-size: 12px;
+    line-height: 15px;
+    color: #C5D8D1;
+}
+
+.cards p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F4EDEA;
+    margin: 0;
+}
+
+.line {
+    border: 1px solid #F4EDEA;
+}
