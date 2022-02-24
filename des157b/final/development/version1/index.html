@@ -6,15 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Version 1</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&family=Spectral:wght@800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 
-
-    <script src="https://cdn.bmschoi.dev/kongee/misc/highway.min.js"></script>
+    <!-- <script src="https://cdn.bmschoi.dev/kongee/misc/highway.min.js"></script> -->
 
 </head>
 
 <body>
-    <main data-router-wrapper>
-        <article data-router-view="name">
+    <nav>
+        <img src="assets/logo.svg" alt="logo">
+        <img class="menu-button" src="assets/menu.svg" alt="menu">
+        <div id="menu">
+            <nav>
+                <img src="assets/logo.svg" alt="logo">
+                <img class="menu-button" src="assets/menu.svg" alt="menu">
+
+            </nav>
+            <a href="index.html">Home</a>
+            <a href="submissions/index.html">Submissions</a>
+            <a href="#">Add your story</a>
+            <a href="about/index.html">Why food?</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="landing">
             <img src="assets/bibimbap.svg">
             <h1>Food as Storytelling.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus et molestie ac feugiat sed. Amet commodo nulla facilisi nullam vehicula.</p>
@@ -23,10 +42,10 @@
                 <button class="secondary">WHY FOOD?</button>
             </div>
             <div id="scrolldown">
-                <img src="assets/arrowdown.svg" alt="arrowdown">
                 <span>or, scroll to view submissions</span>
+                <img src="assets/arrowdown.svg" alt="arrowdown">
             </div>
-        </article>
+        </div>
     </main>
 
 </body>
