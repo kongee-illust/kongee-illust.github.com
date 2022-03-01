@@ -1,0 +1,112 @@
+html,
+body {
+    background-color: #C5D8D1;
+    color: #12263A;
+    width: auto;
+    /* height: 926px; */
+    margin: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+main {
+    margin: 0 16px 32px 16px;
+}
+
+
+/* @media only screen and (max-width: 926px) { */
+
+h1 {
+    font-family: 'Spectral', serif;
+    letter-spacing: -0.05em;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Darker Grotesque', sans-serif;
+    letter-spacing: -0.02em;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+}
+
+p,
+span,
+a {
+    font-family: 'Darker Grotesque', sans-serif;
+    letter-spacing: -0.02em;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* width: 428px; */
+    margin: 38px 16px;
+}
+
+nav #menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 336px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+nav #menu nav {
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+nav #menu.open {
+    display: block;
+    padding: 38px 16px;
+    gap: 32px;
+}
+
+#menu.open a {
+    background-color: white;
+    padding: 16px 0;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    color: #12263A;
+}
+
+.active {
+    font-weight: 700;
+}
+
+button {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+
+.primary {
+    background: #12263A;
+    color: #F4D1AE;
+}
+
+.secondary {
+    background: #F4D1AE;
+    color: #12263A;
+    border: 0.5px solid rgba(18, 38, 58, 0.7);
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
