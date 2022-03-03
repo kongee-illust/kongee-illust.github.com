@@ -95,7 +95,7 @@ button {
 }
 
 button a,
-a:visited {
+button a:visited {
     font-family: 'Darker Grotesque', sans-serif;
     letter-spacing: -0.02em;
     font-size: 18px;
@@ -111,7 +111,7 @@ a:visited {
 }
 
 .primary a,
-a:visited {
+.primary a:visited {
     color: #F4D1AE;
 }
 
@@ -122,7 +122,7 @@ a:visited {
 }
 
 .secondary a,
-a:visited {
+.secondary a:visited {
     color: #12263A;
 }
 
@@ -179,13 +179,33 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 48%;
+    /* height: 313px;
+    overflow-y: hidden; */
+}
+
+.cards img {
+    width: 100%;
+    height: 218px;
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px #00000050;
 }
 
 #card-description {
     color: rgba(18, 38, 58, 0.5);
     font-size: 16px;
     line-height: 16px;
+    height: 36px;
+    overflow-y: hidden;
 }
+
+
+/* 
+#card-description p {
+    text-overflow: ellipsis;
+} */
 
 .card-title-author p {
     color: rgba(18, 38, 58, 0.75);
