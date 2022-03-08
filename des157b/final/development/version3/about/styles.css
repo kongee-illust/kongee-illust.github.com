@@ -110,3 +110,22 @@ button {
     flex-direction: column;
     gap: 16px;
 }
+
+.primary a,
+a:visited {
+    color: #F4D1AE;
+    text-decoration: none;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+#customSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
