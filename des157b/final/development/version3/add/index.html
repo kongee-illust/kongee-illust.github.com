@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version 3</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700&family=Spectral:wght@800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/realm-web@1.5.1/dist/bundle.iife.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">
+            <img src="../assets/logo.svg" alt="logo">
+        </a>
+        <img class="menu-button" src="../assets/menu.svg" alt="menu">
+        <div id="menu">
+            <nav>
+                <img src="../assets/logo.svg" alt="logo">
+                <img class="menu-button" src="../assets/menu.svg" alt="menu">
+
+            </nav>
+            <a href="../index.html">Home</a>
+            <a href="../ourstories/index.html">Our Stories</a>
+            <a href="./index.html">Add your story</a>
+            <a href="../about/index.html">Why food?</a>
+        </div>
+    </nav>
+    <main>
+        <div id="landing">
+            <section id="section1">
+                <h1>Add your story.</h1>
+                <p>Thank you for taking the time to add a slice of your life! If you have any questions or concerns, please contact me at shjkim@ucdavis.edu.</p>
+                <!-- <div class="cta">
+                    <button class="primary"><a href="https://forms.gle/oLcXFRQTWpPWu8d67">ADD YOUR STORY</a></button>
+                    <button class="secondary"><a href="about/index.html">WHY FOOD?</a></button>
+                </div> -->
+            </section>
+            <section id="form">
+                <div class="formItem">
+                    <label for="fname" class="labels">Full Name (Optional)</label>
+                    <p class="formDescription">If you decide not to input your name, your entry will be shown as "Added by Anonymous."</p>
+                    <input type="text" name="fname" placeholder="John Appleseed" class="inputCells formitem">
+                </div>
+                <div class="formItem">
+                    <label for="foodname" class="labels">Title of food / recipe</label>
+                    <input type="text" name="foodname" placeholder="Example: Mom's Kimchi Fried Rice" class="inputCells formitem">
+                </div>
+                <div class="formItem">
+                    <label for="foodIMG" class="labels">Image of food / recipe</label>
+                    <p class="formDescription">If possible, try to find a picture of the dish that you took! Your entry will be more personal that way. But if you're like me and have 50,000 pictures on your phone, you can also find the food image on Google :)</p>
+                    <div id="uploadHitbox">
+                        <img src="../assets/upload-cloud.svg">
+                        <input type="file" multiple='false' accept="image/jpeg" id="myFile" name="filename" class="formitem">
+                    </div>
+                </div>
+                <div class="formItem">
+                    <label for="fname" class="labels">Story associated with food</label>
+                    <p class="formDescription">If you decide not to input your name, your entry will be shown as "Added by Anonymous."</p>
+                    <textarea type="text" name="fname" id="storyDesc" class="inputCells formitem" placeholder="This dish takes me back to my childhood. Whenever I was sad in my childhood, my mom would make me this dish. I want to recreate it, but Mom would never share her secret recipe!"></textarea>
+                </div>
+                <!-- submit button -->
+                <div id="addCTA">
+                    <input type="reset" value="CLEAR FORM" id="formClear">
+                    <input type="submit" value="ADD YOUR STORY" id="formSubmit">
+                </div>
+                <p>Hooray, you've reached the end!</p>
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

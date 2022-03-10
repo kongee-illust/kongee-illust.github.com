@@ -85,53 +85,6 @@ nav #menu.open {
     font-weight: 700;
 }
 
-button {
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    border-radius: 5px;
-    padding: 10px 30px;
-    font-weight: 700;
-}
-
-button a,
-button a:visited {
-    font-family: 'Darker Grotesque', sans-serif;
-    letter-spacing: -0.02em;
-    font-size: 18px;
-    line-height: 18px;
-    margin: 0;
-    text-decoration: none;
-    color: #12263A;
-}
-
-.primary {
-    background: #12263A;
-    color: #F4D1AE;
-}
-
-.primary a,
-.primary a:visited {
-    color: #F4D1AE;
-}
-
-.secondary {
-    background: #F4D1AE;
-    color: #12263A;
-    border: 0.5px solid rgba(18, 38, 58, 0.7);
-}
-
-.secondary a,
-.secondary a:visited {
-    color: #12263A;
-}
-
-.cta {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 #landing {
     display: flex;
     flex-direction: column;
@@ -139,19 +92,17 @@ button a:visited {
     gap: 36px;
 }
 
-#scrolldown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-top: 36px;
-}
-
 #section1 {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 8px;
     align-items: center;
+    width: 340px;
+}
+
+#section1 h1 {
+    font-size: 48px;
+    line-height: 48px;
 }
 
 #section1 p {
@@ -162,10 +113,6 @@ button a:visited {
     display: flex;
     flex-direction: column;
     /* gap: 20px; */
-}
-
-#viewstories {
-    width: 400px
 }
 
 .rows {
@@ -223,26 +170,137 @@ button a:visited {
     line-height: 18px;
 }
 
-#scrolldownArrow {
-    animation: 2s ease-in-out infinite alternate slidein;
+
+/* FORM STYLING */
+
+.labels {
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
 }
 
-@keyframes slidein {
-    0% {
-        transform: translateY(15px);
-    }
-    33% {
-        transform: translateY(0px);
-    }
-    66% {
-        transform: translateY(0px);
-    }
-    80% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(15px);
-    }
+.formDescription {
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.inputCells {
+    border-radius: 5px;
+    background: #fff;
+    height: 40px;
+    width: 396px;
+    border: none;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#form {
+    width: 396px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+/* SUBMIT BUTTON */
+
+button a,
+button a:visited {
+    font-family: 'Darker Grotesque', sans-serif;
+    letter-spacing: -0.02em;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    text-decoration: none;
+    color: #12263A;
+}
+
+#formSubmit {
+    background: #12263A;
+    color: #F4D1AE;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+
+#formSubmit a,
+#formSubmit a:visited {
+    color: #F4D1AE;
+}
+
+#formClear {
+    border: 1px solid #12263A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: #C5D8D1;
+    color: #12263A;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+
+#addCTA {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 396px;
+}
+
+textarea {
+    min-width: 396px;
+    max-width: 396px;
+    width: 396px;
+    height: 80px !important;
+}
+
+input {
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 8px;
+}
+
+#storyDesc {
+    width: 396px;
+}
+
+#uploadHitbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 396px;
+    height: 96px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: 8px 0px;
+}
+
+#myFile {
+    background-color: #fff;
 }
 
 
